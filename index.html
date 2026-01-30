@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Top Bar -->
-    <div class="top-bar">
+    <header class="top-bar">
       <nav class="top-nav">
         <ul>
           <li><a href="#design">Design</a></li>
@@ -26,10 +26,36 @@
           <li><a href="#pickup">Pickup</a></li>
         </ul>
       </nav>
-    </div>
+
+      <div class="sidemenu">
+        <ul>
+          <li class="sidemenu-item"><a href="#design">Design</a></li>
+          <li class="sidemenu-item"><a href="#website">Web Site</a></li>
+          <li class="sidemenu-item"><a href="#pickup">Pickup</a></li>
+        </ul>
+      </div>
+
+      <button class="sidemenu-toggle" aria-label="メニューを開く">
+        <svg
+          width="17"
+          height="14"
+          viewBox="0 0 17 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 12.25H16M1 6.625H16M1 1H16"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </header>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <div class="hero">
       <div class="hero-content">
         <h1>Kame's Portfolio</h1>
         <p class="subtitle">html / css / javascript / typescript / react</p>
@@ -39,7 +65,7 @@
         <span class="circle circle-2"></span>
         <span class="circle circle-3"></span>
       </div>
-    </header>
+    </div>
 
     <main>
       <!-- Design Section -->
@@ -201,6 +227,6 @@
       <div class="copyright">&copy; Kame's Portfolio</div>
     </footer>
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>

@@ -1,13 +1,9 @@
-// Script.js placeholder
-console.log("Kame's Portfolio Loaded");
+const sidemenuToggle = document.querySelector(".sidemenu-toggle");
+const sidemenu = document.querySelector(".sidemenu");
 
-// Future implementation: Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+sidemenuToggle.addEventListener("click", () => {
+  console.log("sidemenu-toggle clicked");
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+  // sidemenu をクリックした時にopenクラスを追加する
+  sidemenu.classList.toggle("open");
 });
